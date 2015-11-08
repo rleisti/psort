@@ -21,8 +21,6 @@ type Interface interface {
 //
 // The implementation is based on Tarjan's algorithm.
 // See: https://en.wikipedia.org/wiki/Topological_sorting#Tarjan.27s_algorithm
-//
-// It is an order O(n) operation.
 func Sort(data Interface) bool {
 	// A mapping of indicies to real indicies of the data
 	index := make([]int, data.Len())
